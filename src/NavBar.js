@@ -1,18 +1,23 @@
 import React from 'react';
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
+import { DropdownLogin } from './DropdownLogin';
 
 export class MyNavBar extends React.Component{
     render(){
-        <Navbar bg="dark" variant="dark">
-            <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-            <Nav className="mr-auto">
-                <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#features">Features</Nav.Link>
-                <Nav.Link href="#pricing">Pricing</Nav.Link>
-            </Nav>
-            <Form inline>
-                <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                <Button variant="outline-info">Search</Button>
-            </Form>
-        </Navbar>
+        return(
+            <Navbar sticky="top" bg="dark" variant="dark" >
+                <Navbar.Brand href="#home">My React App</Navbar.Brand>
+                <Nav fill variant="pills">
+                    <Nav.Item><Nav.Link href="#contador">Contador</Nav.Link></Nav.Item>
+                    <Nav.Item><Nav.Link href="#imc">IMC</Nav.Link></Nav.Item>
+                    <Nav.Item><Nav.Link href="#color">Color Changer</Nav.Link></Nav.Item>
+                </Nav>
+                
+                <div className="ml-auto">
+                    <DropdownLogin />
+                </div>
+            </Navbar>
+        );
     }
 }

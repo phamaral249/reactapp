@@ -45,7 +45,7 @@ export class CalculadoraIMC extends React.Component{
                             <Form.Control type="number" placeholder="Insira sua altura" onChange={this.handleHeightChange}/>
                         </Col>
                     </Form.Group>
-                    <Button onClick={this.calcular} >Calcular</Button>
+                    <Button variant="info" onClick={this.calcular} >Calcular</Button>
                 </Form>
                 <p>{this.state.IMC}</p>
             </div>

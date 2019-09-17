@@ -20,8 +20,12 @@ Form {
 }
 
 .dropdown{
-  margin: 20px;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+
+.nav-pills .nav-link.active {
+  background-color: rgba(255, 100, 0, 0.5);
 }

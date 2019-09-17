@@ -21,8 +21,8 @@ export class Contador extends React.Component{
                 <h1>Contador</h1>
                 <h1>{this.state.contador}</h1>
                 <div>
-                    <Button className="btn-space" onClick={this.addOne}>+</Button>
-                    <Button onClick={this.minusOne}>-</Button>
+                    <Button variant="info" className="btn-space" onClick={this.addOne}>+</Button>
+                    <Button variant="info" onClick={this.minusOne}>-</Button>
                 </div>
             </div>
         );

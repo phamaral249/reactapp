@@ -3,14 +3,13 @@ import './App.css';
 import {Contador} from './Contador.js'
 import { CalculadoraIMC } from './CalculadoraIMC';
 import { ColorChanger } from './ColorChanger';
-import { DropdownWithInput } from './MenuPanel';
+import { MyNavBar } from './NavBar';
 
 
 function App() {
   return (
     <div id="myApp" className="App">
-      
-      <DropdownWithInput />
+      <MyNavBar />
       <Contador />
       <CalculadoraIMC />
       <ColorChanger />
