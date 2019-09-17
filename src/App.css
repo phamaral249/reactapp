@@ -1,0 +1,27 @@
+Form {
+  margin: 0px auto;
+}
+
+.App{
+  text-align: center;
+  background-color: #282c34;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-space {
+  margin-right: 10px;
+}
+
+.center_div{
+  margin: 0 auto;
+  width:100% /* value of your choice which suits your alignment */
+}
+
+.dropdown{
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
